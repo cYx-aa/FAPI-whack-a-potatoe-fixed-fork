@@ -29,7 +29,7 @@ The script uses confidence factors, such as if the colors are similar, if the pi
 First of all, you need python for this, so download it first.
 Then execute the following command to install the needed libraries:
 ```shell
-pip install pyautogui keyboard
+pip install pyautogui keyboard opencv-python
 ```
 Once they are installed you can do the following:
 - go to a terminal

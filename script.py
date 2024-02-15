@@ -4,7 +4,7 @@ import keyboard
 running, isHolding = False, False
 startStopKey = "f8"
 
-print("Starting WhackaMoler@1.0.0")
+print("Starting WhackaMoler@1.0.1(fix)")
 print(f"{startStopKey} - Start / Stop")
 print("-" * 20)
 print("🟩 Running" if running else "🛑 Stopped")
@@ -20,11 +20,19 @@ while True:
         isHolding = False
 
     if running:
-        location = pyautogui.locateOnScreen(
-            image="img/eye.png",
-            confidence=0.8,
-            region=[350,280,620,570]
-        )
-
-        if location:
-            pyautogui.click(location)
+        for image in ['img/eye.png', 'img/eye.png']:
+            try:
+                location = pyautogui.locateOnScreen(
+                    image,
+                    confidence=0.8,
+                    region=[350,280,620,570]
+                )
+                if location:
+                    pyautogui.click(location)
+            except pyautogui.ImageNotFoundException:
+                location = None
+                pass
+            else:
+                break
+        else:
+            image, location = None, None
