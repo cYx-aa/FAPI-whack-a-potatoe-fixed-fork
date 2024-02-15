@@ -10,6 +10,7 @@ The game is pretty straighforward, there are 2 "good" potatoes that give you poi
   - [⚠️ Important info](#️-important-info)
   - [🚀 How to use the script](#-how-to-use-the-script)
   - [🧑‍💻 How it works](#-how-it-works)
+  - [🤓😎 Authors Git](#-Authors-Git)
 
 
 ## ⚠️ Important info
@@ -26,6 +27,19 @@ The script uses confidence factors, such as if the colors are similar, if the pi
 
 ## 🚀 How to use the script
 
+### 🚀 Friendly for all method
+
+1. Open `easy_install.bat`
+
+2. wait for install...............
+
+3. Open `run.bat`
+
+4. Ready, press `F8` when you starts potato whack
+
+5. You are beautyfull^^
+
+### 🚀 Method for advanced PC users 
 First of all, you need python for this, so download it first.
 Then execute the following command to install the needed libraries:
 ```shell
@@ -54,3 +68,6 @@ But because the confidence isn't 100%, it will allow the image to be true even i
 It also uses the `keyboard` library to handle keyboard presses, because having to `Ctrl + C` while your mouse is clicking everywhere is not a good idea... Instead when you press a specific key _(f8 by default)_ it will start or stop the script.
 
 There are multiple images in the img folder because they might be useful incase you're doing extra automations, for example automatically starting the round when the timer reaches to 0.
+
+## 🤓😎 Authors Git
+- [Original Author](https://github.com/Nick-Gabe)
